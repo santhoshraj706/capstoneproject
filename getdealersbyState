@@ -1,7 +1,7 @@
-curl -X GET http://localhost:8000/djangoapp/get_dealers/state/KS/
+curl -X GET "http://localhost:8000/djangoapp/get_dealers?state=KS"
 
 [
-  {"dealer_id":3,"full_name":"Ford of Kansas City","short_name":"Ford KC","city":"Kansas City","state":"KS","zip":"66101","address":"9100 State Avenue","st":"KS","lat":39.114,"long":-94.627},
-  {"dealer_id":4,"full_name":"BMW of Overland Park","short_name":"BMW OP","city":"Overland Park","state":"KS","zip":"66210","address":"10500 Metcalf Avenue","st":"KS","lat":38.9822,"long":-94.6686},
-  {"dealer_id":5,"full_name":"Mercedes of Wichita","short_name":"MB Wichita","city":"Wichita","state":"KS","zip":"67202","address":"2000 E Kellogg Drive","st":"KS","lat":37.6872,"long":-97.33}
+  {"id":3,"full_name":"Ford of Kansas City","short_name":"Ford KC","city":"Kansas City","state":"KS","zip":"66101","address":"9100 State Avenue","lat":39.114,"long":-94.627},
+  {"id":4,"full_name":"BMW of Overland Park","short_name":"BMW OP","city":"Overland Park","state":"KS","zip":"66210","address":"10500 Metcalf Avenue","lat":38.9822,"long":-94.6686},
+  {"id":5,"full_name":"Mercedes of Wichita","short_name":"MB Wichita","city":"Wichita","state":"KS","zip":"67202","address":"2000 E Kellogg Drive","lat":37.6872,"long":-97.33}
 ]

@@ -7,7 +7,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.authtoken.models import Token
 from .models import CarMake, CarModel, CarDealer, DealerReview
-from .serializers import CarMakeSerializer, CarModelSerializer, CarDealerSerializer, DealerReviewSerializer, UserSerializer
+from .serializers import CarMakeSerializer, CarModelSerializer, CarDealerSerializer, DealerReviewSerializer, UserSerializer, CarMakeModelSerializer
 
 
 @api_view(['GET'])
@@ -28,14 +28,8 @@ def get_car_makes(request):
 @permission_classes([AllowAny])
 def get_cars(request):
     makes = CarMake.objects.all()
-    serializer = CarMakeSerializer(makes, many=True)
-    data = []
-    for make in serializer.data:
-        models = CarModel.objects.filter(car_make_id=make['id'])
-        model_serializer = CarModelSerializer(models, many=True)
-        make['Models'] = model_serializer.data
-        data.append(make)
-    return JsonResponse(data, safe=False)
+    serializer = CarMakeModelSerializer(makes, many=True)
+    return JsonResponse(serializer.data, safe=False)
 
 
 @csrf_exempt
@@ -69,6 +63,14 @@ def logout_view(request):
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def get_dealers(request):
+    all_dealers = CarDealer.objects.all()
+    serializer = CarDealerSerializer(all_dealers, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def fetch_dealers(request):
     all_dealers = CarDealer.objects.all()
     serializer = CarDealerSerializer(all_dealers, many=True)
     return JsonResponse(serializer.data, safe=False)
@@ -136,6 +138,18 @@ def dealer_reviews(request, dealer_id):
         review.save()
         serializer = DealerReviewSerializer(review)
         return JsonResponse(serializer.data, status=201)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def fetch_reviews(request, dealer_id):
+    try:
+        dealer = CarDealer.objects.get(dealer_id=dealer_id)
+    except CarDealer.DoesNotExist:
+        return JsonResponse({'error': 'Dealer not found'}, status=404)
+    reviews = DealerReview.objects.filter(dealership=dealer)
+    serializer = DealerReviewSerializer(reviews, many=True)
+    return JsonResponse(serializer.data, safe=False)
 
 
 def analyze_review_sentiment(review_text):

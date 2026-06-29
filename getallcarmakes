@@ -2,46 +2,71 @@ curl -X GET http://localhost:8000/djangoapp/get_cars/
 
 [
   {
-    "id": 1,
-    "name": "Toyota",
-    "description": "Japanese automaker known for reliability",
-    "Models": [
-      {"id": 1, "car_make": 1, "dealer_id": 1, "name": "Camry", "car_type": "SEDAN", "year": "2024-01-01", "price": "28000.00"},
-      {"id": 2, "car_make": 1, "dealer_id": 1, "name": "RAV4", "car_type": "SUV", "year": "2024-01-01", "price": "32000.00"}
+    "id": 1, "name": "Toyota",
+    "CarModels": [
+      {"id": 1, "name": "Camry", "car_type": "SEDAN", "year": 2024, "price": "28000.00"},
+      {"id": 2, "name": "RAV4", "car_type": "SUV", "year": 2024, "price": "32000.00"}
     ]
   },
   {
-    "id": 2,
-    "name": "Honda",
-    "description": "Japanese automaker known for innovation",
-    "Models": [
-      {"id": 3, "car_make": 2, "dealer_id": 2, "name": "Civic", "car_type": "SEDAN", "year": "2024-01-01", "price": "25000.00"},
-      {"id": 4, "car_make": 2, "dealer_id": 2, "name": "CR-V", "car_type": "SUV", "year": "2024-01-01", "price": "30000.00"}
+    "id": 2, "name": "Honda",
+    "CarModels": [
+      {"id": 3, "name": "Civic", "car_type": "SEDAN", "year": 2024, "price": "25000.00"},
+      {"id": 4, "name": "CR-V", "car_type": "SUV", "year": 2024, "price": "30000.00"}
     ]
   },
   {
-    "id": 3,
-    "name": "Ford",
-    "description": "American automaker known for trucks",
-    "Models": [
-      {"id": 5, "car_make": 3, "dealer_id": 3, "name": "F-150", "car_type": "TRUCK", "year": "2024-01-01", "price": "35000.00"},
-      {"id": 6, "car_make": 3, "dealer_id": 3, "name": "Mustang", "car_type": "COUPE", "year": "2024-01-01", "price": "42000.00"}
+    "id": 3, "name": "Ford",
+    "CarModels": [
+      {"id": 5, "name": "F-150", "car_type": "TRUCK", "year": 2024, "price": "35000.00"},
+      {"id": 6, "name": "Mustang", "car_type": "COUPE", "year": 2024, "price": "42000.00"}
     ]
   },
   {
-    "id": 4,
-    "name": "BMW",
-    "description": "German luxury automaker",
-    "Models": [
-      {"id": 7, "car_make": 4, "dealer_id": 4, "name": "3 Series", "car_type": "SEDAN", "year": "2024-01-01", "price": "45000.00"}
+    "id": 4, "name": "BMW",
+    "CarModels": [
+      {"id": 7, "name": "3 Series", "car_type": "SEDAN", "year": 2024, "price": "45000.00"}
     ]
   },
   {
-    "id": 5,
-    "name": "Mercedes-Benz",
-    "description": "German luxury automaker",
-    "Models": [
-      {"id": 8, "car_make": 5, "dealer_id": 5, "name": "C-Class", "car_type": "SEDAN", "year": "2024-01-01", "price": "48000.00"}
+    "id": 5, "name": "Mercedes-Benz",
+    "CarModels": [
+      {"id": 8, "name": "C-Class", "car_type": "SEDAN", "year": 2024, "price": "48000.00"}
+    ]
+  },
+  {
+    "id": 6, "name": "Nissan",
+    "CarModels": [
+      {"id": 9, "name": "Altima", "car_type": "SEDAN", "year": 2024, "price": "27000.00"},
+      {"id": 10, "name": "Rogue", "car_type": "SUV", "year": 2024, "price": "30000.00"}
+    ]
+  },
+  {
+    "id": 7, "name": "Hyundai",
+    "CarModels": [
+      {"id": 11, "name": "Elantra", "car_type": "SEDAN", "year": 2024, "price": "22000.00"},
+      {"id": 12, "name": "Tucson", "car_type": "SUV", "year": 2024, "price": "28000.00"}
+    ]
+  },
+  {
+    "id": 8, "name": "Volkswagen",
+    "CarModels": [
+      {"id": 13, "name": "Jetta", "car_type": "SEDAN", "year": 2024, "price": "24000.00"},
+      {"id": 14, "name": "Tiguan", "car_type": "SUV", "year": 2024, "price": "31000.00"}
+    ]
+  },
+  {
+    "id": 9, "name": "Subaru",
+    "CarModels": [
+      {"id": 15, "name": "Outback", "car_type": "WAGON", "year": 2024, "price": "32000.00"},
+      {"id": 16, "name": "Forester", "car_type": "SUV", "year": 2024, "price": "30000.00"}
+    ]
+  },
+  {
+    "id": 10, "name": "Chevrolet",
+    "CarModels": [
+      {"id": 17, "name": "Silverado", "car_type": "TRUCK", "year": 2024, "price": "36000.00"},
+      {"id": 18, "name": "Equinox", "car_type": "SUV", "year": 2024, "price": "29000.00"}
     ]
   }
 ]

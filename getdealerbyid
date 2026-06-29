@@ -1,3 +1,3 @@
 curl -X GET http://localhost:8000/djangoapp/fetchDealer/3/
 
-{"dealer_id":3,"full_name":"Ford of Kansas City","short_name":"Ford KC","city":"Kansas City","state":"KS","zip":"66101","address":"9100 State Avenue","st":"KS","lat":39.114,"long":-94.627}
+{"id":3,"full_name":"Ford of Kansas City","short_name":"Ford KC","city":"Kansas City","state":"KS","zip":"66101","address":"9100 State Avenue","lat":39.114,"long":-94.627}

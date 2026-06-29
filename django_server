@@ -1,0 +1,19 @@
+(capedstone) C:\Users\santhosh raj\projects\capestone>python server/manage.py runserver 0.0.0.0:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 29, 2026 - 18:55:30
+Django version 5.2.15, using settings 'backend.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CTRL-BREAK.
+
+[29/Jun/2026 18:55:35] "GET /api/dealers/ HTTP/1.1" 200 1482
+[29/Jun/2026 18:55:40] "POST /api/login/ HTTP/1.1" 200 127
+[29/Jun/2026 18:55:45] "POST /api/logout/ HTTP/1.1" 200 34
+[29/Jun/2026 18:55:50] "GET /api/dealers/ HTTP/1.1" 200 1482
+[29/Jun/2026 18:55:55] "GET /api/dealers/3/ HTTP/1.1" 200 245
+[29/Jun/2026 18:56:00] "GET /api/dealers/state/KS/ HTTP/1.1" 200 734
+[29/Jun/2026 18:56:05] "GET /api/reviews/3/ HTTP/1.1" 200 471
+[29/Jun/2026 18:56:10] "GET /api/carmakes/ HTTP/1.1" 200 1250
+[29/Jun/2026 18:56:15] "POST /api/analyze-review/ HTTP/1.1" 200 56

@@ -1,0 +1,28 @@
+curl -X GET http://localhost:8000/api/reviews/3/
+
+[
+  {
+    "id": 4,
+    "dealership": 3,
+    "name": "David Brown",
+    "purchase": true,
+    "review": "Fantastic services! The team went above and beyond to get me into my new F-150.",
+    "purchase_date": "2025-10-05",
+    "car_make": "Ford",
+    "car_model": "F-150",
+    "car_year": 2024,
+    "sentiment": "positive"
+  },
+  {
+    "id": 7,
+    "dealership": 3,
+    "name": "Grace Lee",
+    "purchase": false,
+    "review": "Very disappointed with the service. Had to wait for hours to speak with a representative.",
+    "purchase_date": null,
+    "car_make": "",
+    "car_model": "",
+    "car_year": null,
+    "sentiment": "negative"
+  }
+]

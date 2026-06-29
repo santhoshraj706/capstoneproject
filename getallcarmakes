@@ -1,0 +1,47 @@
+curl -X GET http://localhost:8000/api/carmakes/
+
+[
+  {
+    "id": 1,
+    "name": "Toyota",
+    "description": "Japanese automaker known for reliability",
+    "models": [
+      {"id": 1, "car_make": 1, "dealer_id": 1, "name": "Camry", "car_type": "SEDAN", "year": "2024-01-01", "price": "28000.00"},
+      {"id": 2, "car_make": 1, "dealer_id": 1, "name": "RAV4", "car_type": "SUV", "year": "2024-01-01", "price": "32000.00"}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Honda",
+    "description": "Japanese automaker known for innovation",
+    "models": [
+      {"id": 3, "car_make": 2, "dealer_id": 2, "name": "Civic", "car_type": "SEDAN", "year": "2024-01-01", "price": "25000.00"},
+      {"id": 4, "car_make": 2, "dealer_id": 2, "name": "CR-V", "car_type": "SUV", "year": "2024-01-01", "price": "30000.00"}
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Ford",
+    "description": "American automaker known for trucks",
+    "models": [
+      {"id": 5, "car_make": 3, "dealer_id": 3, "name": "F-150", "car_type": "TRUCK", "year": "2024-01-01", "price": "35000.00"},
+      {"id": 6, "car_make": 3, "dealer_id": 3, "name": "Mustang", "car_type": "COUPE", "year": "2024-01-01", "price": "42000.00"}
+    ]
+  },
+  {
+    "id": 4,
+    "name": "BMW",
+    "description": "German luxury automaker",
+    "models": [
+      {"id": 7, "car_make": 4, "dealer_id": 4, "name": "3 Series", "car_type": "SEDAN", "year": "2024-01-01", "price": "45000.00"}
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mercedes-Benz",
+    "description": "German luxury automaker",
+    "models": [
+      {"id": 8, "car_make": 5, "dealer_id": 5, "name": "C-Class", "car_type": "SEDAN", "year": "2024-01-01", "price": "48000.00"}
+    ]
+  }
+]

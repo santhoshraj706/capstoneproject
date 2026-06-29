@@ -4,7 +4,10 @@
 ## Repository Name: capestoneproject
 
 A full-stack car dealership management application built with Django REST Framework and React.
-
+GitHub repo: https://github.com/santhoshraj706/capstoneproject
+Repository name: capstoneproject
+Project name: CarDealership
+URL: https://github.com/santhoshraj706/capstoneproject/blob/master/README.md
 ### Tech Stack
 - **Backend**: Django 5.2, Django REST Framework
 - **Frontend**: React 18, React Router DOM

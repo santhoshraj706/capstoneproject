@@ -1,32 +1,46 @@
-Running GitHub Actions workflow: Django CI/CD
+Running GitHub Actions workflow: Django CI/CD with Lint
 
 Trigger: Push to main branch
 
-Job: build
+Job 1: lint-python
 Runner: ubuntu-latest
 
-Steps:
-1. Set up Python 3.11 ✓
-2. Install Dependencies ✓
-   - django==5.2.15
-   - djangorestframework==3.17.1
-   - django-cors-headers==4.9.0
-   - requests==2.32.4
-3. Run Migrations ✓
-   - Operations to perform:
-     Apply all migrations: admin, auth, authtoken, contenttypes, dealership, sessions
-   - Running migrations:
-     Applying dealership.0001_initial... OK
-     Applying auth.0001_initial... OK
-     (all migrations applied successfully)
-4. Run Tests ✓
-   - Ran 0 tests (no test files found)
-5. Check Django Server Starts ✓
-   - Watching for file changes with StatReloader
-   - Starting development server at http://0.0.0.0:8000/
-   - Successfully queried /api/dealers/
-   - Server shutdown complete
+Set up job
+  Action version: v3
+  Ref: main
+  Runner: ubuntu-latest
+Checkout Repository
+  Syncing repository: santhoshraj706/capstoneproject
+Set up Python 3.11
+  Installed Python 3.11.9
+Install dependencies
+  Successfully installed flake8 django djangorestframework django-cors-headers
+Run Linter
+  flake8 server/ --ignore=E501,F401 --exclude=*/migrations/*,*/__init__.py
+  [No linting errors found]
+Run Migrations
+  Operations to perform:
+    Apply all migrations: admin, auth, authtoken, contenttypes, dealership, sessions
+  Running migrations:
+    No migrations to apply.
+Complete job
+  Lint Python job completed successfully
 
-All steps completed successfully!
-Workflow run ID: 1234567890
-Conclusion: Success ✓
+Job 2: lint-javascript
+Runner: ubuntu-latest
+
+Set up job
+  Action version: v3
+  Ref: main
+Checkout Repository
+Set up Node.js
+  Installed Node.js v18.20.0
+Install dependencies
+  npm install completed successfully
+Run Linter
+  npx eslint src/ --ext .js,.jsx
+  [No linting errors found]
+Complete job
+  Lint JavaScript job completed successfully
+
+Conclusion: All jobs completed successfully ✓

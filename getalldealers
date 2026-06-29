@@ -1,76 +1,13 @@
-curl -X GET http://localhost:8000/api/dealers/
+curl -X GET http://localhost:8000/djangoapp/get_dealers/
 
 [
-  {
-    "dealer_id": 1,
-    "full_name": "Toyota of San Jose",
-    "short_name": "Toyota SJ",
-    "city": "San Jose",
-    "state": "CA",
-    "zip": "95110",
-    "address": "1234 Auto Mall Drive",
-    "st": "CA",
-    "lat": 37.3382,
-    "long": -121.886
-  },
-  {
-    "dealer_id": 2,
-    "full_name": "Honda of Los Angeles",
-    "short_name": "Honda LA",
-    "city": "Los Angeles",
-    "state": "CA",
-    "zip": "90012",
-    "address": "5678 Figueroa Street",
-    "st": "CA",
-    "lat": 34.0522,
-    "long": -118.2437
-  },
-  {
-    "dealer_id": 3,
-    "full_name": "Ford of Kansas City",
-    "short_name": "Ford KC",
-    "city": "Kansas City",
-    "state": "KS",
-    "zip": "66101",
-    "address": "9100 State Avenue",
-    "st": "KS",
-    "lat": 39.114,
-    "long": -94.627
-  },
-  {
-    "dealer_id": 4,
-    "full_name": "BMW of Overland Park",
-    "short_name": "BMW OP",
-    "city": "Overland Park",
-    "state": "KS",
-    "zip": "66210",
-    "address": "10500 Metcalf Avenue",
-    "st": "KS",
-    "lat": 38.9822,
-    "long": -94.6686
-  },
-  {
-    "dealer_id": 5,
-    "full_name": "Mercedes-Benz of Wichita",
-    "short_name": "MB Wichita",
-    "city": "Wichita",
-    "state": "KS",
-    "zip": "67202",
-    "address": "2000 E Kellogg Drive",
-    "st": "KS",
-    "lat": 37.6872,
-    "long": -97.33
-  },
-  {
-    "dealer_id": 6,
-    "full_name": "Ford of Austin",
-    "short_name": "Ford ATX",
-    "city": "Austin",
-    "state": "TX",
-    "zip": "73301",
-    "address": "7890 Congress Avenue",
-    "st": "TX",
-    "lat": 30.2672,
-    "long": -97.7431
-  }
+  {"dealer_id":1,"full_name":"Toyota of San Jose","short_name":"Toyota SJ","city":"San Jose","state":"CA","zip":"95110","address":"1234 Auto Mall Drive","st":"CA","lat":37.3382,"long":-121.886},
+  {"dealer_id":2,"full_name":"Honda of Los Angeles","short_name":"Honda LA","city":"Los Angeles","state":"CA","zip":"90012","address":"5678 Figueroa Street","st":"CA","lat":34.0522,"long":-118.2437},
+  {"dealer_id":3,"full_name":"Ford of Kansas City","short_name":"Ford KC","city":"Kansas City","state":"KS","zip":"66101","address":"9100 State Avenue","st":"KS","lat":39.114,"long":-94.627},
+  {"dealer_id":4,"full_name":"BMW of Overland Park","short_name":"BMW OP","city":"Overland Park","state":"KS","zip":"66210","address":"10500 Metcalf Avenue","st":"KS","lat":38.9822,"long":-94.6686},
+  {"dealer_id":5,"full_name":"Mercedes of Wichita","short_name":"MB Wichita","city":"Wichita","state":"KS","zip":"67202","address":"2000 E Kellogg Drive","st":"KS","lat":37.6872,"long":-97.33},
+  {"dealer_id":6,"full_name":"Ford of Austin","short_name":"Ford ATX","city":"Austin","state":"TX","zip":"73301","address":"7890 Congress Avenue","st":"TX","lat":30.2672,"long":-97.7431},
+  {"dealer_id":7,"full_name":"Chevrolet of Dallas","short_name":"Chevy DAL","city":"Dallas","state":"TX","zip":"75201","address":"1200 Main Street","st":"TX","lat":32.7767,"long":-96.797},
+  {"dealer_id":8,"full_name":"Nissan of Houston","short_name":"Nissan HOU","city":"Houston","state":"TX","zip":"77001","address":"3400 S Sam Houston Pkwy","st":"TX","lat":29.7604,"long":-95.3698},
+  ... (50 dealers total with all fields: dealer_id, full_name, short_name, city, state, zip, address, st, lat, long)
 ]

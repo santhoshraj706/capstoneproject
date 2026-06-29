@@ -78,6 +78,14 @@ def fetch_dealers(request):
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
+def fetch_dealers_by_state(request, state):
+    dealers = CarDealer.objects.filter(state__iexact=state)
+    serializer = CarDealerSerializer(dealers, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
 def get_dealer_by_id(request, dealer_id):
     try:
         dealer = CarDealer.objects.get(dealer_id=dealer_id)

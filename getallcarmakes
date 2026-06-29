@@ -1,72 +1,14 @@
 curl -X GET http://localhost:8000/djangoapp/get_cars/
 
 [
-  {
-    "id": 1, "name": "Toyota",
-    "CarModels": [
-      {"id": 1, "name": "Camry", "car_type": "SEDAN", "year": 2024, "price": "28000.00"},
-      {"id": 2, "name": "RAV4", "car_type": "SUV", "year": 2024, "price": "32000.00"}
-    ]
-  },
-  {
-    "id": 2, "name": "Honda",
-    "CarModels": [
-      {"id": 3, "name": "Civic", "car_type": "SEDAN", "year": 2024, "price": "25000.00"},
-      {"id": 4, "name": "CR-V", "car_type": "SUV", "year": 2024, "price": "30000.00"}
-    ]
-  },
-  {
-    "id": 3, "name": "Ford",
-    "CarModels": [
-      {"id": 5, "name": "F-150", "car_type": "TRUCK", "year": 2024, "price": "35000.00"},
-      {"id": 6, "name": "Mustang", "car_type": "COUPE", "year": 2024, "price": "42000.00"}
-    ]
-  },
-  {
-    "id": 4, "name": "BMW",
-    "CarModels": [
-      {"id": 7, "name": "3 Series", "car_type": "SEDAN", "year": 2024, "price": "45000.00"}
-    ]
-  },
-  {
-    "id": 5, "name": "Mercedes-Benz",
-    "CarModels": [
-      {"id": 8, "name": "C-Class", "car_type": "SEDAN", "year": 2024, "price": "48000.00"}
-    ]
-  },
-  {
-    "id": 6, "name": "Nissan",
-    "CarModels": [
-      {"id": 9, "name": "Altima", "car_type": "SEDAN", "year": 2024, "price": "27000.00"},
-      {"id": 10, "name": "Rogue", "car_type": "SUV", "year": 2024, "price": "30000.00"}
-    ]
-  },
-  {
-    "id": 7, "name": "Hyundai",
-    "CarModels": [
-      {"id": 11, "name": "Elantra", "car_type": "SEDAN", "year": 2024, "price": "22000.00"},
-      {"id": 12, "name": "Tucson", "car_type": "SUV", "year": 2024, "price": "28000.00"}
-    ]
-  },
-  {
-    "id": 8, "name": "Volkswagen",
-    "CarModels": [
-      {"id": 13, "name": "Jetta", "car_type": "SEDAN", "year": 2024, "price": "24000.00"},
-      {"id": 14, "name": "Tiguan", "car_type": "SUV", "year": 2024, "price": "31000.00"}
-    ]
-  },
-  {
-    "id": 9, "name": "Subaru",
-    "CarModels": [
-      {"id": 15, "name": "Outback", "car_type": "WAGON", "year": 2024, "price": "32000.00"},
-      {"id": 16, "name": "Forester", "car_type": "SUV", "year": 2024, "price": "30000.00"}
-    ]
-  },
-  {
-    "id": 10, "name": "Chevrolet",
-    "CarModels": [
-      {"id": 17, "name": "Silverado", "car_type": "TRUCK", "year": 2024, "price": "36000.00"},
-      {"id": 18, "name": "Equinox", "car_type": "SUV", "year": 2024, "price": "29000.00"}
-    ]
-  }
+  {"id":1,"name":"Toyota","CarModels":[{"id":1,"name":"Camry","car_type":"SEDAN","year":2024,"price":28000.0},{"id":2,"name":"RAV4","car_type":"SUV","year":2024,"price":32000.0}]},
+  {"id":2,"name":"Honda","CarModels":[{"id":3,"name":"Civic","car_type":"SEDAN","year":2024,"price":25000.0},{"id":4,"name":"CR-V","car_type":"SUV","year":2024,"price":30000.0}]},
+  {"id":3,"name":"Ford","CarModels":[{"id":5,"name":"F-150","car_type":"TRUCK","year":2024,"price":35000.0},{"id":6,"name":"Mustang","car_type":"COUPE","year":2024,"price":42000.0}]},
+  {"id":4,"name":"BMW","CarModels":[{"id":7,"name":"3 Series","car_type":"SEDAN","year":2024,"price":45000.0}]},
+  {"id":5,"name":"Mercedes-Benz","CarModels":[{"id":8,"name":"C-Class","car_type":"SEDAN","year":2024,"price":48000.0}]},
+  {"id":6,"name":"Nissan","CarModels":[{"id":9,"name":"Altima","car_type":"SEDAN","year":2024,"price":27000.0},{"id":10,"name":"Rogue","car_type":"SUV","year":2024,"price":30000.0}]},
+  {"id":7,"name":"Hyundai","CarModels":[{"id":11,"name":"Elantra","car_type":"SEDAN","year":2024,"price":22000.0},{"id":12,"name":"Tucson","car_type":"SUV","year":2024,"price":28000.0}]},
+  {"id":8,"name":"Volkswagen","CarModels":[{"id":13,"name":"Jetta","car_type":"SEDAN","year":2024,"price":24000.0},{"id":14,"name":"Tiguan","car_type":"SUV","year":2024,"price":31000.0}]},
+  {"id":9,"name":"Subaru","CarModels":[{"id":15,"name":"Outback","car_type":"WAGON","year":2024,"price":32000.0},{"id":16,"name":"Forester","car_type":"SUV","year":2024,"price":30000.0}]},
+  {"id":10,"name":"Chevrolet","CarModels":[{"id":17,"name":"Silverado","car_type":"TRUCK","year":2024,"price":36000.0},{"id":18,"name":"Equinox","car_type":"SUV","year":2024,"price":29000.0}]}
 ]

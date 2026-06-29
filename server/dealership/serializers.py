@@ -51,4 +51,4 @@ class CarMakeModelSerializer(serializers.ModelSerializer):
 
     def get_CarModels(self, obj):
         car_models = CarModel.objects.filter(car_make=obj)
-        return [{'id': m.id, 'name': m.name, 'car_type': m.car_type, 'year': m.year.year, 'price': str(m.price)} for m in car_models]
+        return [{'id': m.id, 'name': m.name, 'car_type': m.car_type, 'year': m.year.year, 'price': float(m.price)} for m in car_models]

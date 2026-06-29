@@ -1,1 +1,4 @@
-https://santhoshraj706-capestoneproject-8000.proxy.cognitiveclass.ai
+Deployment URL: https://santhoshraj706-capestoneproject-8000.proxy.cognitiveclass.ai
+
+The URL uses the format: <repository-name>-<port>.proxy.cognitiveclass.ai
+The port (-8000) is embedded in the subdomain name with a hyphen prefix as required by the IBM proxy format.

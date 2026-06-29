@@ -29,7 +29,13 @@ def get_car_makes(request):
 def get_cars(request):
     makes = CarMake.objects.all()
     serializer = CarMakeModelSerializer(makes, many=True)
-    return JsonResponse(serializer.data, safe=False)
+    cars = serializer.data
+    flat_models = []
+    for make in cars:
+        for model in make.get('CarModels', []):
+            model['car_make'] = make['name']
+            flat_models.append(model)
+    return JsonResponse({'CarModels': flat_models})
 
 
 @csrf_exempt
